@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign-Up Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sideimage">
+            <div class="odinText">
+                <img src="images/odin-lined.png" alt="TOP Logo" height="150px">
+                <p>Odin</p>
+            </div>
+        </div>
+
+        <div class="form">
+            <form action="/signup">
+                <fieldset>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName">
+
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName">
+
+                    <label for="mail">Email</label>
+                    <input type="email" name="mail" id="mail">
+
+                    <label for="phone">Phone Number</label>
+                    <input type="number" name="phone" id="phone">
+
+                    <label for="pass">Password</label>
+                    <input type="password" name="pass" id="pass">
+
+                    <label for="conPass">Confirm Password</label>
+                    <input type="password" name="conPass" id="conPass">
+                </fieldset>
+
+                <button type="submit">Create Account</button>
+            </form>
+
+            Already have an account? <a href="/login">Log in</a>
+        </div>
+    </div>
+</body>
+
+</html>

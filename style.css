@@ -1,0 +1,70 @@
+@font-face {
+    font-family: logo;
+    src: url(Fonts/Norse-Bold.otf);
+}
+
+div {
+    font-family: myFirstFont;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.sideimage {
+    background-image: url(images/Background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40vw;
+}
+
+.odinText {
+    font-family: logo;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: relative;
+    top: 20vh;
+
+    font-size: 6em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+}
+
+.odinText p {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+input {
+    border-radius: 2px;
+    border: solid #E5E7EB 2px;
+}
+
+button {
+    border-radius: 10px;
+    background-color: #596D48;
+    border: none;
+    color: white;
+    padding: 10px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+input:focus {
+    border: 2px solid #00c3ff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
