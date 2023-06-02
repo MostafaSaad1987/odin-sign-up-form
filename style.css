@@ -171,3 +171,15 @@ input {
 .passError {
     border: solid #ff0000 2px;
 }
+
+.credit {
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 10vw;
+}
+
+.credit>a {
+    color: white;
+    text-decoration: underline;
+}
