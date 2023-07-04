@@ -8,43 +8,88 @@ div {
 }
 
 .container {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-}
-
-.sideimage {
-    background-image: url(images/Background.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 40vw;
-}
-
-.odinText {
-    font-family: logo;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    position: relative;
-    top: 20vh;
-
-    font-size: 6em;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 10px;
-}
-
-.odinText p {
-    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
 }
 
 body {
     margin: 0;
 }
 
+
+/* LEFT SIDE */
+.leftSide {
+    grid-column: 1 / 2;
+
+    background-image: url(images/Background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+.odinLogoSection {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: absolute;
+    top: 20vh;
+    padding: 10px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+.odinText {
+    margin: 0;
+
+    font-family: logo;
+    color: white;
+
+    font-size: 6em;
+}
+
+.credit {
+    color: white;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+.credit>a {
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* RIGHT SIDE */
+.rightSide {
+    grid-column: 2 / -1;
+
+    background-color: #F9FAFB;
+
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+
+    gap: 25px;
+}
+
+.bottomStuff {
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+.textRight {
+    font-size: 25px;
+    padding: 50px;
+    padding-bottom: 25px;
+}
+
+
+/* FORM */
 input {
     border-radius: 2px;
     border: solid #E5E7EB 2px;
@@ -84,15 +129,6 @@ a {
 
 .italic {
     font-style: italic;
-}
-
-.rightSide {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: 25px;
-
-    background-color: #F9FAFB;
 }
 
 fieldset {
@@ -138,26 +174,6 @@ input {
     box-sizing: border-box;
 }
 
-.textRight {
-    padding: 50px;
-}
-
-.bottomStuff {
-    padding-top: 50px;
-    padding-left: 50px;
-}
-
-
-.textRight {
-    font-size: 25px;
-    padding-top: 100px;
-    padding-bottom: 25px;
-}
-
-.bottomStuff {
-    padding-top: 10px;
-}
-
 #error {
     font-size: 12px;
     color: red;
@@ -170,16 +186,4 @@ input {
 
 .passError {
     border: solid #ff0000 2px;
-}
-
-.credit {
-    color: white;
-    position: absolute;
-    bottom: 0px;
-    left: 10vw;
-}
-
-.credit>a {
-    color: white;
-    text-decoration: underline;
 }
